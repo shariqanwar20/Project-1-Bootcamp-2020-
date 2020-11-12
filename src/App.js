@@ -6,18 +6,19 @@ import { Balance } from "./components/Balance";
 import { AccountSummary } from "./components/AccountSummary";
 import { TransactionHistory } from "./components/TransactionHistory";
 import { AddTransaction } from "./components/AddTransaction";
+import { GlobalProvider } from './context/TransactionContext';
 
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Header />
       <div className="container">
-        <Balance />
+        {/* <Balance /> */}
         <AccountSummary />
         <TransactionHistory />
         <AddTransaction />
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 
