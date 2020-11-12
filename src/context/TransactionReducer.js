@@ -16,8 +16,9 @@ const transactionReducer = (state, action) => {
                 {
                     newList.push(item)
                 }
+                return newList;
             })
-            return newList;
+            //return newList;
         }
             
         default :
