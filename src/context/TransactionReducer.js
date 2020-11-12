@@ -11,15 +11,14 @@ const transactionReducer = (state, action) => {
         case "REMOVE_TRANSACTION" :
         {
             const newList = []
-            state.map((item) => {
-                if (item.id !== action.id)
+            for (let i = 0; i < state.length; i++)
+            {
+                if (state[i].id !== action.id)
                 {
-                    newList.push(item)
+                    newList.push(state[i])
                 }
-                return newList;
-            })
-            break;
-            //return newList;
+            }
+            return newList;
         }
             
         default :
