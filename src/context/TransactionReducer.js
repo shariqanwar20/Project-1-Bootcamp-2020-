@@ -18,6 +18,7 @@ const transactionReducer = (state, action) => {
                 }
                 return newList;
             })
+            break;
             //return newList;
         }
             
