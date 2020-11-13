@@ -23,11 +23,11 @@ export const AddTransaction = () => {
             <h3>Add Transaction</h3>
             <form onSubmit={handleAddition}>
                 <div>
-                    <label htmlFor="email">Enter Email</label>
-                    <input type="text" placeholder="Email Address" onChange={(event) => setDescription(event.target.value)}></input>
+                    <label htmlFor="email">Description</label>
+                    <input type="text" placeholder="Detail Of Transaction" onChange={(event) => setDescription(event.target.value)}></input>
                     <br />
-                    <label htmlFor="number">Enter Value</label>
-                    <input type="number" placeholder="Enter Positive or Negative number" onChange={(event) => setAmount(event.target.value)}></input>
+                    <label htmlFor="number">Transaction Amount</label>
+                    <input type="number" placeholder="Dollar Value Of Transaction" onChange={(event) => setAmount(event.target.value)}></input>
                     <button className="btn">Add Transaction</button>
                 </div>
             </form>
